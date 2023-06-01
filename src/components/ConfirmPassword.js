@@ -22,16 +22,18 @@ function ConfirmPasssword() {
 
   return (
     <div>
-      <label htmlFor="confirm-password">Create Password</label>
-      <br />
-      <input
-        type={inputType}
-        value={value}
-        onChange={handleChange}
-        required=""
-        autocomplete="current-password"
-      />
-      {visibilityIcon}
+      <label htmlFor="confirm-password">Confirm Password</label>
+      <div className="flex items-center">
+        <input
+          type={inputType}
+          value={value}
+          onChange={handleChange}
+          required=""
+          autocomplete="current-password"
+          className="mr-1 border outline-none"
+        />
+        {visibilityIcon}
+      </div>
     </div>
   );
 }

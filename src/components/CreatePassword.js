@@ -23,15 +23,17 @@ function CreatePasssword() {
   return (
     <div>
       <label htmlFor="create-password">Create Password</label>
-      <br />
-      <input
-        type={inputType}
-        value={value}
-        onChange={handleChange}
-        required=""
-        autocomplete="current-password"
-      />
-      {visibilityIcon}
+      <div className="flex items-center">
+        <input
+          type={inputType}
+          value={value}
+          onChange={handleChange}
+          required=""
+          autocomplete="current-password"
+          className="mr-1 border outline-none"
+        />
+        {visibilityIcon}
+      </div>
     </div>
   );
 }
